@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de usuário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="The_Powerpuff_Girls_2016_reboot_logo.png.png" alt="logo">
+    <br><br>
+    <h1>Cadastro de heroína</h1>
+    <div class = "container">   
+        <form id="cadastroForm">
+            <input type="text" id = "nome" placeholder="Nome" required>
+            <input type="text" id = "email" placeholder="E-mail" required>
+            <input type="text" id = "senha" placeholder="Senha" required>
+            <button type="button" onclick="cadastrarUsuario()">Cadastrar</button>
+        </form>
+
+        <a href="usuarios.html" class="link-usuarios">Ver usuarios cadastrados</a>
+    </div> 
+    
+    <div id="mensagem" class="mensagem oculta" onclick="fecharMensagem()"></div>
+
+    <script src = "script.js"></script>
+</body>
+</html>

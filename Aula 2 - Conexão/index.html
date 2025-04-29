@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de usuário</title>
+    <title>Cadastro de usuários</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <title>Meu Projeto</title>
 </head>
 <body>
-    <img src="The_Powerpuff_Girls_2016_reboot_logo.png.png" alt="logo">
-    <br><br>
-    <h1>Cadastro de heroína</h1>
-    <div class = "container">   
+    <img src="The_Powerpuff_Girls_2016_reboot_logo.png.png" alt="Logo" class="logo">
+    <div class="container">
+        <h2>Cadastro de heroínas</h2>
+
         <form id="cadastroForm">
-            <input type="text" id = "nome" placeholder="Nome" required>
-            <input type="text" id = "email" placeholder="E-mail" required>
-            <input type="text" id = "senha" placeholder="Senha" required>
-            <button type="button" onclick="cadastrarUsuario()">Cadastrar</button>
+            <input type="text" id="nome" placeholder="Nome" required>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="password" id="senha" placeholder="Senha" required>
+            <button type="button" class = "chewy-regular" onclick="cadastrarUsuario()">Cadastrar</button>
         </form>
 
-        <a href="usuarios.html" class="link-usuarios">Ver usuarios cadastrados</a>
-    </div> 
-    
-    <div id="mensagem" class="mensagem oculta" onclick="fecharMensagem()"></div>
+        <button class="chewy-regular">
+            <a href="usuarios.html" class="link-usuarios">Ver heroínas cadastradas</a>
+        </button>
+    </div>
+   
+    <div id="mensagem" class="mensagem oculto" onclick="fecharMensagem()"></div>
 
-    <script src = "script.js"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>
